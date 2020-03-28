@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:CalculatorWPF"
         mc:Ignorable="d"
         Title="Calculator" Height="450" Width="350">
-    <Grid>
+    <Grid Margin="5">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="4*" />
+            <RowDefinition Height="3*" />
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0">
-            <TextBlock Text="5x6" TextAlignment="Right" FontSize="30" />
-            <TextBlock Text="30" TextAlignment="Right" FontSize="25" Opacity="0.5" />
+            <TextBlock Text="5x6" TextAlignment="Right" FontSize="35" />
+            <TextBlock Text="30" TextAlignment="Right" FontSize="30" Opacity="0.5" />
         </StackPanel>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -22,6 +22,39 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <!-- Row count start at 0 -->
+            <!-- Row 0 -->
+            <Button Grid.Row="0" Grid.Column="0" Content="π" FontSize="20" />
+            <Button Grid.Row="0" Grid.Column="1" Content="÷" FontSize="20" />
+            <Button Grid.Row="0" Grid.Column="2" Content="X" FontSize="20" />
+            <Button Grid.Row="0" Grid.Column="3" Content="AC" FontSize="20" />
+            <!-- Row 1 -->
+            <Button Grid.Row="1" Grid.Column="0" Content="7" FontSize="20" />
+            <Button Grid.Row="1" Grid.Column="1" Content="8" FontSize="20" />
+            <Button Grid.Row="1" Grid.Column="2" Content="9" FontSize="20" />
+            <Button Grid.Row="1" Grid.Column="3" Content="C" FontSize="20" />
+            <!-- Row 2 -->
+            <Button Grid.Row="2" Grid.Column="0" Content="4" FontSize="20" />
+            <Button Grid.Row="2" Grid.Column="1" Content="5" FontSize="20" />
+            <Button Grid.Row="2" Grid.Column="2" Content="6" FontSize="20" />
+            <Button Grid.Row="2" Grid.Column="3" Content="-" FontSize="20" />
+            <!-- Row 3 -->
+            <Button Grid.Row="3" Grid.Column="0" Content="1" FontSize="20" />
+            <Button Grid.Row="3" Grid.Column="1" Content="2" FontSize="20" />
+            <Button Grid.Row="3" Grid.Column="2" Content="3" FontSize="20" />
+            <Button Grid.Row="3" Grid.Column="3" Content="+" FontSize="20" />
+            <!-- Row 4 -->
+            <Button Grid.Row="4" Grid.Column="0" Content="%" FontSize="20" />
+            <Button Grid.Row="4" Grid.Column="1" Content="0" FontSize="20" />
+            <Button Grid.Row="4" Grid.Column="2" Content="." FontSize="20" />
+            <Button Grid.Row="4" Grid.Column="3" Content="=" FontSize="20" />
         </Grid>
     </Grid>
 </Window>
