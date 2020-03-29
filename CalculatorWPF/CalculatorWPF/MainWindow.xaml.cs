@@ -24,5 +24,11 @@ namespace CalculatorWPF
         {
             InitializeComponent();
         }
+
+        private void BtnClearEntry_Click(object sender, RoutedEventArgs e)
+        {
+            tbxEntry.Text = "";
+            tbxResult.Text = "";
+        }
     }
 }

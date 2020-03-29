@@ -12,8 +12,8 @@
             <RowDefinition Height="3*" />
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0">
-            <TextBlock Text="5x6" TextAlignment="Right" FontSize="35" />
-            <TextBlock Text="30" TextAlignment="Right" FontSize="30" Opacity="0.5" />
+            <TextBlock x:Name="tbxEntry" Text="5x6" TextAlignment="Right" FontSize="35" />
+            <TextBlock x:Name="tbxResult" Text="30" TextAlignment="Right" FontSize="30" Opacity="0.5" />
         </StackPanel>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -31,30 +31,29 @@
             </Grid.RowDefinitions>
             <!-- Row count start at 0 -->
             <!-- Row 0 -->
-            <Button Grid.Row="0" Grid.Column="0" Content="π" FontSize="20" />
-            <Button Grid.Row="0" Grid.Column="1" Content="÷" FontSize="20" />
-            <Button Grid.Row="0" Grid.Column="2" Content="X" FontSize="20" />
-            <Button Grid.Row="0" Grid.Column="3" Content="AC" FontSize="20" />
+            <Button x:Name="btnClearEntry" Grid.Row="0" Grid.Column="0" Content="C" FontSize="20" Click="BtnClearEntry_Click" />
+            <Button x:Name="btnDiv" Grid.Row="0" Grid.Column="1" Content="÷" FontSize="20" />
+            <Button x:Name="btnMul" Grid.Row="0" Grid.Column="2" Content="X" FontSize="20" />
+            <Button x:Name="btnDelete" Grid.Row="0" Grid.Column="3" Content="del" FontSize="20" />
             <!-- Row 1 -->
-            <Button Grid.Row="1" Grid.Column="0" Content="7" FontSize="20" />
-            <Button Grid.Row="1" Grid.Column="1" Content="8" FontSize="20" />
-            <Button Grid.Row="1" Grid.Column="2" Content="9" FontSize="20" />
-            <Button Grid.Row="1" Grid.Column="3" Content="C" FontSize="20" />
+            <Button x:Name="btn7" Grid.Row="1" Grid.Column="0" Content="7" FontSize="20" />
+            <Button x:Name="btn8" Grid.Row="1" Grid.Column="1" Content="8" FontSize="20" />
+            <Button x:Name="btn9" Grid.Row="1" Grid.Column="2" Content="9" FontSize="20" />
+            <Button x:Name="btnSub" Grid.Row="1" Grid.Column="3" Content="-" FontSize="20" />
             <!-- Row 2 -->
-            <Button Grid.Row="2" Grid.Column="0" Content="4" FontSize="20" />
-            <Button Grid.Row="2" Grid.Column="1" Content="5" FontSize="20" />
-            <Button Grid.Row="2" Grid.Column="2" Content="6" FontSize="20" />
-            <Button Grid.Row="2" Grid.Column="3" Content="-" FontSize="20" />
+            <Button x:Name="btn4" Grid.Row="2" Grid.Column="0" Content="4" FontSize="20" />
+            <Button x:Name="btn5" Grid.Row="2" Grid.Column="1" Content="5" FontSize="20" />
+            <Button x:Name="btn6" Grid.Row="2" Grid.Column="2" Content="6" FontSize="20" />
+            <Button x:Name="btnAdd" Grid.Row="2" Grid.Column="3" Content="+" FontSize="20" />
             <!-- Row 3 -->
-            <Button Grid.Row="3" Grid.Column="0" Content="1" FontSize="20" />
-            <Button Grid.Row="3" Grid.Column="1" Content="2" FontSize="20" />
-            <Button Grid.Row="3" Grid.Column="2" Content="3" FontSize="20" />
-            <Button Grid.Row="3" Grid.Column="3" Content="+" FontSize="20" />
+            <Button x:Name="btn1" Grid.Row="3" Grid.Column="0" Content="1" FontSize="20" />
+            <Button x:Name="btn2" Grid.Row="3" Grid.Column="1" Content="2" FontSize="20" />
+            <Button x:Name="btn3" Grid.Row="3" Grid.Column="2" Content="3" FontSize="20" />
+            <Button x:Name="btnEquals" Grid.Row="3" Grid.Column="3" Content="=" Grid.RowSpan="2" FontSize="20" />
             <!-- Row 4 -->
-            <Button Grid.Row="4" Grid.Column="0" Content="%" FontSize="20" />
-            <Button Grid.Row="4" Grid.Column="1" Content="0" FontSize="20" />
-            <Button Grid.Row="4" Grid.Column="2" Content="." FontSize="20" />
-            <Button Grid.Row="4" Grid.Column="3" Content="=" FontSize="20" />
+            <Button x:Name="btnMod" Grid.Row="4" Grid.Column="0" Content="%" FontSize="20" />
+            <Button x:Name="btn0" Grid.Row="4" Grid.Column="1" Content="0" FontSize="20" />
+            <Button x:Name="btnPoint" Grid.Row="4" Grid.Column="2" Content="." FontSize="20" />
         </Grid>
     </Grid>
 </Window>
