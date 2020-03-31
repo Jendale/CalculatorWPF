@@ -179,6 +179,7 @@ namespace CalculatorWPF
 
             num1 = num2 = 0;
             operation = "";
+            isPeriodUsed = false;
         }
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
